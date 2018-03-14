@@ -1,4 +1,4 @@
-/*! JSON Editor v0.7.29 - JSON Schema -> HTML Editor
+/*! JSON Editor v0.7.30 - JSON Schema -> HTML Editor
  * By Jeremy Dorn - https://github.com/jdorn/json-editor/
  * Released under the MIT license
  *
@@ -2250,7 +2250,8 @@ JSONEditor.defaults.editors.string = JSONEditor.AbstractEditor.extend({
       this.sceditor_instance.destroy();
     }
     else if(this.SimpleMDE) {
-      this.SimpleMDE.destroy();
+      this.SimpleMDE.toTextArea();
+      this.SimpleMDE = null;
     }
     else if(this.ace_editor) {
       this.ace_editor.destroy();

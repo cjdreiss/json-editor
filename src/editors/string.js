@@ -380,7 +380,8 @@ JSONEditor.defaults.editors.string = JSONEditor.AbstractEditor.extend({
       this.sceditor_instance.destroy();
     }
     else if(this.SimpleMDE) {
-      this.SimpleMDE.destroy();
+      this.SimpleMDE.toTextArea();
+      this.SimpleMDE = null;
     }
     else if(this.ace_editor) {
       this.ace_editor.destroy();
