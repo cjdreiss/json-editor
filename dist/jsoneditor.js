@@ -7468,7 +7468,7 @@ JSONEditor.defaults.iconlibs.fontawesome4 = JSONEditor.AbstractIconLib.extend({
   mapping: {
     collapse: 'caret-square-o-down',
     expand: 'caret-square-o-right',
-    "delete": 'times',
+    "delete": 'trash-o',
     edit: 'pencil',
     add: 'plus',
     cancel: 'ban',
